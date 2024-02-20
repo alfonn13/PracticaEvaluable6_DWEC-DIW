@@ -20,7 +20,8 @@
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
   border-radius: 15px;
   overflow: hidden;
-  margin-bottom: 15rem;
+  margin: 1rem;
+  
 
 }
 
@@ -58,6 +59,7 @@
   user-select: none;
 }
 
+
 .btn-left:hover, .btn-right:hover {
   background-color: #333333d4;
   color: #fff;
@@ -70,10 +72,6 @@
 .btn-right {
   right: 10px;
 }
-
-/* Tu código CSS existente */
-
-/* Estilos para el modal */
 
 .modal {
   display: none;
@@ -97,7 +95,7 @@
 .h1-section{
   font-size: 3rem;
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 4rem;
   
 }
 
@@ -115,4 +113,7 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+
+  
 }
