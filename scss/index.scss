@@ -1,0 +1,402 @@
+@import "./variables.scss";
+@import "./envioCorrecto.scss";
+@import "./menu.scss";
+@import "./style.scss";
+@import "./carrusel.scss";
+@import "./darkmode.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+  height: 80vh;
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background: linear-gradient(rgba(11, 11, 11, 0), rgba(2, 2, 2, 0.5));
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+  }
+
+  .img-svg {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+.h1-container {
+  position: relative;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.25rem;
+  color: white;
+}
+
+.p-container {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.25rem;
+  color: white;
+}
+
+.p-second {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.container-second {
+  padding: 200px 150px;
+  text-align: center;
+}
+
+.card-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 75%;
+  margin: 0 auto;
+  background: rgb(3, 31, 51);
+  background: linear-gradient(90deg, rgba(3, 31, 51, 1) 3%, rgba(42, 81, 105, 1) 67%);
+  border-radius: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  height: 80vh;
+}
+
+.imgOrdenador {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  padding-bottom: 2rem;
+}
+
+.title-grid {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 11rem;
+  padding-bottom: 7rem;
+}
+
+.grid-container {
+  display: grid;
+  padding: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 80px;
+}
+
+.box-div {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 500px;
+  height: 270px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.cards {
+  padding: 40px;
+  clip-path: polygon(0 8%, 100% 0, 100% 90%, 0% 100%);
+  background-color: rgb(214, 205, 205);
+  height: 150vh;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: rgb(242, 236, 236);
+    font-size: 1.3rem;
+    transition: .3s;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+}
+
+.h1-cards {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.h2-cards {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.p-cards {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+}
+
+@media (width = 1024px) {
+  .cards {
+    height: 200vh;
+  }
+
+  .card {
+    height: 60vh;
+  }
+}
+
+@media (width = 820px) {
+  .cards {
+    height: 230vh;
+  }
+
+  .card {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-principal {
+    height: 70vh;
+  }
+
+  .h1-container {
+    font-size: 2rem;
+  }
+
+  .p-container {
+    font-size: 1rem;
+  }
+
+  .img-svg {
+    width: 100px;
+    height: 60px;
+  }
+
+  .container-second {
+    padding: 90px 50px;
+    font-size: 2rem;
+  }
+
+  .p-second {
+    font-size: 1.5rem;
+  }
+
+  .title-grid {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: -6rem;
+  }
+
+  .cards {
+    height: 270vh;
+    padding: 30px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h1-cards {
+    font-size: 2rem;
+  }
+
+  .h2-cards {
+    font-size: 1.5rem;
+  }
+
+  .p-cards {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    height: 50px;
+  }
+
+  .button:hover {
+    font-size: 1.3rem;
+    height: 58px;
+  }
+
+  
+}
+
+@media screen and (max-width: 480px) {
+ 
+
+  .container-principal {
+    height: 60vh;
+  }
+
+  .h1-container {
+    font-size: 1.5rem;
+  }
+
+  .p-container {
+    font-size: 0.8rem;
+  }
+
+  .img-svg {
+    width: 80px;
+    height: 50px;
+  }
+
+  .container-second {
+    padding: 90px 20px;
+    font-size: 1.5rem;
+  }
+
+  .p-second {
+    font-size: 1rem;
+  }
+
+  .title-grid {
+    font-size: 2rem;
+  }
+
+  .cards {
+    height: 300vh;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h1-cards {
+    font-size: 1.3rem;
+  }
+
+  .h2-cards {
+    font-size: .7rem;
+  }
+
+  .p-cards {
+    font-size: 0.6rem;
+  }
+
+  .imgOrdenador {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    padding-bottom: 0.80rem;
+  }
+
+  .card {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .cards{
+    height: 220vh;
+  }
+
+  .button{
+    font-size: 0.8rem;
+  
+  }
+
+  .button:hover{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards {
+    height: 180vh;
+  }
+
+  .imgOrdenador {
+    width: 100%;
+
+    height: 20rem;
+    object-fit: cover;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .h1-cards {
+    font-size: 0.8rem;
+  }
+
+  .h2-cards {
+    font-size: 0.6rem;
+  }
+
+  .p-cards {
+    font-size: 0.6rem;
+  }
+
+  .card{
+    height: 70vh;
+  }
+
+  .cards{
+    height: 255vh;
+  }
+}
+

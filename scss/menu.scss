@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url(../assets/fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list_icon {
+  padding-top: 13px;
+  margin-top: 50px;
+  width: 60px;
+  height: 80px;
+}
+
+.cross-icon{
+  padding-top: 13px;
+  margin-top: 50px;
+
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+.header {
+  height: $altura_header;
+  background-color: white;
+}
+
+.logo-a {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 $padding_left_right;
+  z-index: 1000;
+}
+
+.menu_hamburguesa {
+  display: none;
+  color: black;
+
+  &:checked + .ul_links {
+      height: calc(100vh - $altura_header);
+      background-color: #ffffff; // Añade el color de fondo deseado al menú desplegable
+      color: #000000; // Cambia el color del texto si es necesario para que sea legible sobre el fondo
+  }
+}
+
+.list_icon {
+  color: $color_blanco;
+  cursor: pointer;
+}
+
+.ul_links {
+  width: 100%;
+  position: absolute;
+  top: $altura_header;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: all .3s;
+  z-index: 1000;
+  margin-right: 70px;
+}
+
+.logo {
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.link {
+  font-size: 3em;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 880px) {
+  .labe_hamburguesa {
+      display: none;
+      
+  }
+  
+
+  .ul_links {
+      position: static;
+      width: auto;
+      height: auto;
+      flex-direction: row;
+      gap: 2rem;
+  }
+
+  .link {
+      font-size: 1.8rem;
+      transition: all .3s;
+      padding: .2rem .7rem;
+
+      &:hover {
+          background-color: rgb(197, 183, 183);
+          margin: 1rem;
+          cursor: pointer;
+          border-radius: 1rem;
+          font-size: 2rem;
+      }
+  }
+}
+
+/*@media (max-width:880px){
+  .dark-mode-toggle{
+      display: none;
+  }
+}
+*/

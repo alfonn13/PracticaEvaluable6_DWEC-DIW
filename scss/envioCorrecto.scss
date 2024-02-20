@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(../assets/fonts/Rubik/static/Rubik-Regular.ttf);
+  }
+  
+  
+  
+  .containerEnvio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  
+  .envioCorrecto-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-top: 10rem;
+  }
+  
+  .button {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 2rem;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(223, 214, 214);
+    border-radius: 8px;
+  
+    &:hover {
+      background-color: rgb(232, 223, 223);
+      color: black;
+      width: 16rem;
+      height: 3.5rem;
+      transition: 0.5s;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .envioCorrecto-h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .button {
+      width: 10rem;
+      height: 2rem;
+  
+      &:hover {
+        width: 11rem;
+        height: 2.5rem;
+      }
+    }
+  }
+  
