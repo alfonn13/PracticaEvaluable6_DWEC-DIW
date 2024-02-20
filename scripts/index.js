@@ -1,6 +1,6 @@
 /*
 Alfonso Reviejo Valle
-https://github.com/alfonn13/PracticaEvaluableU5_DWEC-DIW
+https://github.com/alfonn13/PracticaEvaluable6_DWEC-DIW
 */
 
 const formulario = document.querySelector('#formulario');

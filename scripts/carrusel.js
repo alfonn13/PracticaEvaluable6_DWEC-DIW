@@ -47,15 +47,10 @@ function moveToLeft() {
     
 }   
 
-
-// Obtener el modal y la imagen dentro del modal
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-image");
-
-// Obtener todas las imágenes del carrusel
 const images = document.querySelectorAll(".slider-section img");
 
-// Escuchar el clic en cada imagen y mostrar el modal con la imagen correspondiente
 images.forEach(img => {
   img.addEventListener("click", () => {
     modal.style.display = "block";
@@ -63,12 +58,10 @@ images.forEach(img => {
   });
 });
 
-// Escuchar clic en el botón de cerrar del modal
 document.querySelector(".close").addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// Cerrar el modal haciendo clic fuera de él
 window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";

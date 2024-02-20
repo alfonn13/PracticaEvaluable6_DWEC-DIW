@@ -58,8 +58,8 @@ ol, ul {
 
   &:checked + .ul_links {
       height: calc(100vh - $altura_header);
-      background-color: #ffffff; // Añade el color de fondo deseado al menú desplegable
-      color: #000000; // Cambia el color del texto si es necesario para que sea legible sobre el fondo
+      background-color: #ffffff; 
+      color: #000000; 
   }
 }
 
@@ -128,9 +128,3 @@ ol, ul {
   }
 }
 
-/*@media (max-width:880px){
-  .dark-mode-toggle{
-      display: none;
-  }
-}
-*/
